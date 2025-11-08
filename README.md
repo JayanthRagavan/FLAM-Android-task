@@ -1,109 +1,97 @@
-Shape Detection Challenge
+🧠 Shape Detection Challenge
 
-This project detects and classifies geometric shapes (like circles, rectangles, triangles, pentagons, etc.) from uploaded images using TypeScript and HTML5 Canvas.
+This project detects and classifies geometric shapes 🟢🔺⬜ from uploaded images using TypeScript and HTML5 Canvas.
+It showcases real-time image analysis, contour detection, and confidence-based shape classification — all running in the browser! 🚀
 
-Features
+✨ Features
 
-Upload any shape image (hand-drawn or digital).
+✅ Upload any image (hand-drawn or digital)
+✅ Detects and classifies multiple shapes at once
+✅ Supports:
+🔹 Circle
+🔹 Triangle
+🔹 Rectangle
+🔹 Square
+🔹 Pentagon
+🔹 Polygon (for complex shapes)
+✅ Displays results with confidence scores
+✅ Sleek, modern UI with dynamic visualization
 
-Automatically detects shapes and outlines them.
-
-Displays classification results (shape type and confidence score).
-
-Supports detection of:
-• Circle
-• Square
-• Rectangle
-• Triangle
-• Pentagon
-• Polygon (for complex shapes)
-
-Clean and interactive UI with real-time results.
-
-Project Structure
-
+📁 Project Structure
 shape-detector/
-├── index.html → Main web page
+├── index.html           → Main web page  
 ├── src/
-│ ├── main.ts → Shape detection logic
-│ └── style.css → UI styling
-├── package.json → Project configuration
-└── README.txt → Project documentation
+│   ├── main.ts          → Shape detection logic  
+│   └── style.css        → UI styling  
+├── package.json         → Project configuration  
+└── README.txt           → Project documentation  
 
-Setup Instructions
+⚙️ Setup Instructions
 
-Prerequisites:
+🧩 Prerequisites
 
-Node.js version 16 or higher (Recommended: v22.16.0 or later)
+Node.js v16 or higher (✅ Recommended: v22.16.0 or newer)
 
 npm or yarn package manager
 
-Steps to Run:
+💻 Steps to Run
+1️⃣ Install dependencies → npm install
+2️⃣ Start development server → npm run dev
+3️⃣ Open your browser and visit 👉 http://localhost:5173 (port may vary)
 
-Install dependencies → npm install
+🧾 How to Use
 
-Start the development server → npm run dev
+Click “Choose File” and upload an image containing simple shapes.
 
-Open your browser and go to http://localhost:5173
- (port may vary)
+Supported formats: .jpg, .jpeg, .png
 
-How to Use
+Recommended: black shapes on a white background for best accuracy.
 
-Click on “Choose File” and upload an image that contains simple geometric shapes.
+The system automatically:
+🔸 Detects edges and contours
+🔸 Classifies the shape (triangle, circle, rectangle, etc.)
+🔸 Calculates a dynamic confidence score
 
-Supported formats: .jpg, .png, .jpeg
+Results are displayed in real-time below the canvas 🎯
 
-Recommended: Black shapes on white background for best accuracy.
-
-Once uploaded, the app automatically:
-
-Detects contours
-
-Identifies shape type
-
-Calculates confidence score
-
-Results are displayed below the canvas.
-
-Example Output
+🧮 Example Output
 
 Detected Shapes:
+1️⃣ Shape: 🔺 Triangle | Confidence: 96%
+2️⃣ Shape: 🟢 Circle | Confidence: 98%
+3️⃣ Shape: ⬛ Rectangle | Confidence: 91%
 
-Shape: Triangle | Confidence: 96%
+🧠 Logic Overview
 
-Shape: Circle | Confidence: 98%
+🔹 Converts image to grayscale
+🔹 Applies Sobel edge detection
+🔹 Extracts contours
+🔹 Counts vertices to identify shape type
+🔹 Calculates aspect ratios and angles
+🔹 Classifies shapes dynamically
 
-Shape: Rectangle | Confidence: 91%
+Confidence Score Formula 🧷
+Calculated using:
 
-Logic Overview
+Edge smoothness
 
-Converts the image to grayscale.
+Contour symmetry
 
-Applies edge detection (Sobel or Canny filters).
+Aspect ratio similarity
 
-Extracts contours and counts vertices.
+🎨 UI Highlights
 
-Classifies shapes based on vertex count and geometric proportions.
+🌈 Clean, responsive layout
+🖼️ Centered canvas with shadow borders
+⚡ Instant feedback after upload
+📋 Results panel with highlighted detection summary
 
-Calculates a confidence score based on:
-• Edge smoothness
-• Symmetry
-• Aspect ratio similarity
+👨‍💻 Developer
 
-UI Highlights
+Name: Jayanth Ragavan Mylsamy
+Role: Developer & Designer
+Platform: Visual Studio Code
 
-Minimalist and clean interface.
+📜 License
 
-Centered interactive canvas with shadowed borders.
-
-Auto-updating results panel that lists all detected shapes.
-
-User-friendly layout for easy testing.
-
-Developer
-
-JayanthRagavan M
-
-License
-
-This project is open-source and can be used freely for learning and experimentation.
+This project is open-source and free to use for learning, experimentation, and demonstration purposes.
