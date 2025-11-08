@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shape Detection Challenge</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <body>
+  <h1>🔷 Shape Detection Challenge</h1>
+
+  <div id="upload-area" class="upload-box">
+    <p>📤 Drag & drop an image or click below to upload</p>
+    <input type="file" id="imageUpload" accept="image/*" />
+  </div>
+
+  <div class="btn-group">
+    <button id="sampleBtn">Load Sample</button>
+    <button id="clearBtn">Clear Canvas</button>
+  </div>
+
+  <canvas id="canvas" width="400" height="300"></canvas>
+
+  <div id="summary" class="summary-box"></div>
+  <pre id="output"></pre>
+</body>
+
+  <div class="container">
+    <h1>🧠 Shape Detection Challenge</h1>
+    <p class="subtitle">Upload or drag & drop an image to automatically detect geometric shapes</p>
+
+    <div id="upload-area" class="upload-area">
+      <input type="file" id="imageUpload" accept="image/*" hidden />
+      <label for="imageUpload" id="uploadLabel">📁 Click or Drop Image Here</label>
+    </div>
+
+    <div class="controls">
+      <button id="clearBtn">🧹 Clear</button>
+      <button id="sampleBtn">📂 Load Sample Image</button>
+    </div>
+
+    <div class="canvas-container">
+      <canvas id="canvas" width="500" height="400"></canvas>
+    </div>
+
+    <div class="results">
+      <h2>🔍 Detection Results</h2>
+      <div id="summary"></div>
+      <pre id="output"></pre>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.ts"></script>
+</body>
+</html>
